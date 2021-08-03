@@ -17,7 +17,3 @@ jobs:
     - uses: microsoft/setup-msbuild@v1.0.2
     - run: MSBuild.exe $Env:GITHUB_WORKSPACE\visual-studio-git\visual-studio-git.csproj -p:Configuration=Release
       timeout-minutes: 5
-    - uses: actions/upload-artifact@v1.0.0
-      with:
-          name: artifacts
-          path: src\OpenUserSecrets\bin\Release\OpenUserSecrets.vsix
